@@ -1,12 +1,12 @@
 <template>
-    <div class="wrapper">
-        <swiper :options="swiperOption" class="swiper-container" >
-        <!-- slides -->
-        <swiper-slide class="swiper-item" v-for='item of swiperList' :key='item.id'>
-            <img class='swiper-img' :src='item.imgUrl'/>
-        </swiper-slide>
-        <!-- Optional controls ,显示小点-->
-        <div class="swiper-pagination"  slot="pagination"></div>
+  <div class="wrapper">
+    <swiper :options="swiperOption" class="swiper-container" >
+      <!-- slides -->
+      <swiper-slide class="swiper-item" v-for='item of swiperList' :key='item.id'>
+          <img class='swiper-img' :src='item.imgUrl'/>
+      </swiper-slide>
+      <!-- Optional controls ,显示小点-->
+      <div class="swiper-pagination"  slot="pagination"></div>
     </swiper>
   </div>
 </template>

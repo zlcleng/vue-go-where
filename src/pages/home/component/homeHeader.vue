@@ -18,13 +18,13 @@ export default {
 <style lang="less" scoped>
   .home-header {
     display: flex;
-    height: 3.4rem;
-    line-height: 3.4rem;
+    height: 88px;
+    line-height: 88px;
     color: #fff;
     text-align: center;
     background-color: #0ac4dd;
     .header-left {
-      width: 3.4rem;
+      width: 80px;
       float: left;
     }
     .header-search{
@@ -32,24 +32,25 @@ export default {
       i {
         position: absolute;
         top: 0;
-        left: 4rem;
+        left: 100px;
         color: #000;
-        font-size: 1rem;
+        font-size: 32px;
       }
       input{
-        height: 2rem;
+        height: 60px;
         width: 90%;
-        border-radius: 0.3rem;
+        border-radius: 4px;
         border: 1px;
-        padding-left: 2rem;
+        padding-left: 60px;
         outline: none;
       }
     }
     .header-right {
-      width: 4rem;
+      width: 128px;
       float: right;
+      font-size: 28px;
       i{
-        font-size: 1.8rem;
+        font-size: 34px;
         vertical-align: middle;
       }
     }
