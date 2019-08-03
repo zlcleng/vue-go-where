@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   name:'homeIcons',
   data() {
@@ -82,6 +83,16 @@ export default {
       ],
     }
   },
+  mounted(){
+    this.getIcons()
+  },
+  methods: {
+    getIcons ()  {
+      axios.get('/api/icons.json').then(res => {
+        console.log(res)
+      })
+    }
+  },
   computed: {
     swiperPage () {
       let swiperPageList = []
@@ -103,6 +114,7 @@ export default {
     overflow: hidden;
     height: 280px;
     width: 100%;
+    background: #fff;
     .swiper-container {
       height: 100%;
     }
